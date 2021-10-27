@@ -1,0 +1,119 @@
+.balance {
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__name {
+    font-size: $fs-title;
+    font-weight: 600;
+  }
+  &__link {
+    color: $color-main;
+    margin-top: 10px;
+  }
+  &__title {
+    font-size: $fs-title;
+    padding: 5px;
+    color: $color-gray;
+    font-weight: 500;
+    margin-top: 20px;
+    & + .balance__table {
+      margin-top: 0;
+    }
+  }
+  &__table {
+    font-size: $fs-normal;
+    margin-top: 20px;
+    white-space: nowrap;
+    td {
+      padding: 5px 5px 10px;
+      vertical-align: top;
+    }
+  }
+}
+.table__wrapper {
+  overflow-x: auto;
+}
+.removed {
+
+  &__type {
+    color: $color-gray;
+  }
+
+  &__time {
+    color: $color-red;
+  }
+}
+.total__spent {
+  margin-top: 20px;
+  td {
+    padding: 5px;
+    font-weight: 600;
+  }
+}
+.assign-role {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  &__input {
+    display: inline-block;
+    font-weight: 600;
+    margin-top: 16px;
+    font-size: $fs-title;
+  }
+  &__checkbox {
+    margin-right: 5px;
+  }
+  &__line {
+    margin-top: 16px;
+    border-top: 2px solid $color-gray;
+  }
+}
+
+
+.add-payment {
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    & + .add-payment__box {
+      margin-top: 15px;
+    }
+  }
+  &__type {
+    margin-right: auto;
+    padding-right: 10px;
+  }
+  &__btn {
+    width: 22px;
+    height: 22px;
+    margin-right: 5px;
+    background-color: #fff;
+    vertical-align: middle;
+    border: 1px solid $color-main;
+    cursor: pointer;
+  }
+  &__input {
+    width: 22px;
+    height: 22px;
+    margin-right: 5px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+  }
+  &__text {
+    margin: 0 5px 0 0;
+  }
+  &__date {
+    width: 90px;
+    height: 22px;
+    cursor: pointer;
+  }
+}
+.add-payment__input::-webkit-outer-spin-button,
+.add-payment__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; 
+}

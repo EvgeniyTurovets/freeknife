@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>title</title>
+</head>
+
+<body>
+
+  <div class="container wrapper">
+    <section class="schedule page page--show" id="schedule">
+      <header class="header">
+        <div class="burger">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </div>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item page-btn menu__item-schedule" data-page="#schedule">Расписание</li>
+            <li class="menu__item page-btn" data-page="#balance">Баланс</li>
+            <li class="menu__item page-btn" data-page="#profile">Профиль</li>
+            <li class="menu__item page-btn" data-page="#list">Список участников</li>
+            <li class="menu__item page-btn" data-page="#redact">Редактировать расписание</li>
+            <li class="menu__item page-btn" data-page="#total">Общий баланс</li>
+            <li class="menu__item page-btn" data-page="#settings">Настройки</li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="publication">
+        <span class="publication__title">Новое расписание:</span>
+        <span class="publication__time">10.00</span>
+        <span class="publication__day">Воскресенье</span>
+      </div>
+
+      <div class="schedule__box active">
+        <div class="schedule__title">
+          <span class="schedule__day">Понедельник</span>
+          <span class="schedule__date">5.03.21</span>
+        </div>
+
+        <div class="schedule__lesson">
+          <div class="schedule__subtitle">
+            <span class="schedule__time">17.30</span>
+            <span class="schedule__exercise">Накидка</span>
+            <button class="btn__sign-up icon-plus" data-micromodal-trigger="modal-3"></button>
+            <button class="btn__add icon-plus"></button>
+          </div>
+
+          <div class="schedule__coaching-staff">
+            <span class="schedule__instructor">
+              <a href="tel:79221110500" class="icon-phone"></a>
+              <span class="page-btn" data-page="#balance">Марина Харькова</span>
+            </span>
+
+            <span class="schedule__instructor">
+              <a href="tel:79221110500" class="icon-phone"></a>
+              <span class="page-btn" data-page="#balance">Дамир Белялов</span>
+            </span>
+          </div>
+
+          <ul class="signed-up">
+            <li class="signed-up__student">
+              <div>
+                <label class="signed-up__label">
+                  <input type="checkbox" class="signed-up__checkbox">
+                  <span class="signed-up__checkbox-icon"></span>
+                </label>
+                <span class="signed-up__name page-btn" data-page="#balance">Маргарита Земцова</span>
+              </div>
+              <div class="signed-up__log-out">
+                <span class="signed-up__counter">8</span>
+                <button class="btn__log-out icon-plus"></button>
+              </div>
+            </li>
+
+            <li class="signed-up__student">
+              <div>
+                <label class="signed-up__label">
+                  <input type="checkbox" class="signed-up__checkbox">
+                  <span class="signed-up__checkbox-icon"></span>
+                </label>
+                <span class="signed-up__name page-btn" data-page="#balance">Маргарита Земцова</span>
+              </div>
+              <div class="signed-up__log-out">
+                <span class="signed-up__counter">8</span>
+                <button class="btn__log-out icon-plus"></button>
+              </div>
+            </li>
+
+            <li class="signed-up__student unsubscribed">
+              <div>
+                <label class="signed-up__label">
+                  <input type="checkbox" class="signed-up__checkbox">
+                  <span class="signed-up__checkbox-icon"></span>
+                </label>
+                <span class="signed-up__name page-btn" data-page="#balance">Маргарита Земцова</span>
+              </div>
+              <div class="signed-up__log-out">
+                <span class="unsubscribed__reason">Отм</span>
+                <span class="signed-up__counter">8</span>
+                <button class="btn__log-out icon-plus"></button>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="schedule__lesson">
+          <div class="schedule__subtitle">
+            <span class="schedule__time">17.30</span>
+            <span class="schedule__exercise">Накидка</span>
+            <span class="btn__over">
+              Запись закончена
+              <button class="btn__over_icon icon-bell-slash"></button>
+            </span>
+          </div>
+
+          <div class="schedule__coaching-staff">
+            <span class="schedule__instructor">
+              <a href="tel:79221110500" class="icon-phone"></a>
+              Марина Харькова
+            </span>
+
+            <span class="schedule__instructor">
+              <a href="tel:79221110500" class="icon-phone"></a>
+              Дамир Белялов
+            </span>
+          </div>
+
+          <ul class="signed-up">
+            <li class="signed-up__student">
+              <div>
+                <label class="signed-up__label">
+                  <input type="checkbox" class="signed-up__checkbox">
+                  <span class="signed-up__checkbox-icon"></span>
+                </label>
+                <span class="signed-up__name page-btn" data-page="#balance">Маргарита Земцова</span>
+              </div>
+              <div class="signed-up__log-out">
+                <span class="signed-up__counter">8</span>
+                <button class="btn__log-out icon-plus"></button>
+              </div>
+            </li>
+
+            <li class="signed-up__student">
+              <div>
+                <label class="signed-up__label">
+                  <input type="checkbox" class="signed-up__checkbox">
+                  <span class="signed-up__checkbox-icon"></span>
+                </label>
+                <span class="signed-up__name page-btn" data-page="#balance">Маргарита Земцова</span>
+              </div>
+              <div class="signed-up__log-out">
+                <span class="signed-up__counter">8</span>
+                <button class="btn__log-out icon-plus"></button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="schedule__box active">
+        <div class="schedule__title">
+          <span class="schedule__day">Понедельник</span>
+          <span class="schedule__date">5.03.21</span>
+        </div>
+
+        <div class="schedule__lesson">
+          <div class="schedule__subtitle">
+            <span class="schedule__time">17.30</span>
+            <span class="schedule__exercise">Накидка</span>
+            <button class="btn__sign-up icon-plus"></button>
+            <button class="btn__add icon-plus"></button>
+          </div>
+
+          <div class="schedule__coaching-staff">
+            <span class="schedule__instructor">
+              <a href="tel:79221110500" class="icon-phone"></a>
+              Марина Харькова
+            </span>
+
+            <span class="schedule__instructor">
+              <a href="tel:79221110500" class="icon-phone"></a>
+              Дамир Белялов
+            </span>
+          </div>
+
+          <ul class="signed-up">
+            <li class="signed-up__student">
+              <div>
+                <label class="signed-up__label">
+                  <input type="checkbox" class="signed-up__checkbox">
+                  <span class="signed-up__checkbox-icon"></span>
+                </label>
+                <span class="signed-up__name page-btn" data-page="#balance">Маргарита Земцова</span>
+              </div>
+              <div class="signed-up__log-out">
+                <span class="signed-up__counter">8</span>
+                <button class="btn__log-out icon-plus"></button>
+              </div>
+            </li>
+
+            <li class="signed-up__student">
+              <div>
+                <label class="signed-up__label">
+                  <input type="checkbox" class="signed-up__checkbox">
+                  <span class="signed-up__checkbox-icon"></span>
+                </label>
+                <span class="signed-up__name page-btn" data-page="#balance">Маргарита Земцова</span>
+              </div>
+              <div class="signed-up__log-out">
+                <span class="signed-up__counter">8</span>
+                <button class="btn__log-out icon-plus"></button>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="schedule__lesson">
+          <div class="schedule__subtitle">
+            <span class="schedule__time">17.30</span>
+            <span class="schedule__exercise">Накидка</span>
+            <span class="btn__over">
+              Запись закончена
+              <button class="btn__over_icon icon-bell-slash"></button>
+            </span>
+          </div>
+
+          <div class="schedule__coaching-staff">
+            <span class="schedule__instructor">
+              <a href="tel:79221110500" class="icon-phone"></a>
+              Марина Харькова
+            </span>
+
+            <span class="schedule__instructor">
+              <a href="tel:79221110500" class="icon-phone"></a>
+              Дамир Белялов
+            </span>
+          </div>
+
+          <ul class="signed-up">
+            <li class="signed-up__student">
+              <div>
+                <label class="signed-up__label">
+                  <input type="checkbox" class="signed-up__checkbox">
+                  <span class="signed-up__checkbox-icon"></span>
+                </label>
+                <span class="signed-up__name page-btn" data-page="#balance">Маргарита Земцова</span>
+              </div>
+              <div class="signed-up__log-out">
+                <span class="signed-up__counter">8</span>
+                <button class="btn__log-out icon-plus"></button>
+              </div>
+            </li>
+
+            <li class="signed-up__student">
+              <div>
+                <label class="signed-up__label">
+                  <input type="checkbox" class="signed-up__checkbox">
+                  <span class="signed-up__checkbox-icon"></span>
+                </label>
+                <span class="signed-up__name page-btn" data-page="#balance">Маргарита Земцова</span>
+              </div>
+              <div class="signed-up__log-out">
+                <span class="signed-up__counter">8</span>
+                <button class="btn__log-out icon-plus"></button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="profile page" id="profile">
+      <div class="section-heading">
+        <span class="section-heading__back icon-arrow"></span>
+        <span class="section-heading__title">Профиль</span>
+      </div>
+
+      <form action="">
+        <label class="profile__title">
+          Имя
+          <input type="text" class="profile__input" value="Дарья">
+        </label>
+
+        <label class="profile__title">
+          Фамилия
+          <input type="text" class="profile__input" value="Ткачева">
+        </label>
+
+        <label class="profile__title">
+          id Vkontakte
+          <input type="url" class="profile__input" value="https://vk.com/shaktin">
+        </label>
+
+        <label class="profile__title">
+          Email
+          <input type="email" class="profile__input" value="Ткачева">
+        </label>
+
+        <label class="profile__title">
+          Пароль
+          <input type="password" class="profile__input" value="12345678">
+        </label>
+
+        <label class="profile__title">
+          Телефон
+          <input type="tel" class="profile__input" value="+79999999">
+        </label>
+
+        <div class="control">
+          <button type="submit" class="control__btn btn__submit">Сохранить</button>
+          <button type="reset" class="control__btn btn__reset">Отмена</button>
+        </div>
+      </form>
+    </section>
+
+
+    <section class="balance page" id="balance">
+      <div class="section-heading">
+        <span class="section-heading__back icon-arrow"></span>
+        <span class="section-heading__title">Баланс</span>
+      </div>
+
+      <div class="balance__box">
+        <div class="balance__name">Маргарита Земцова</div>
+        <a href="https://vk.com/shaktin" class="balance__link">https://vk.com/shaktin</a>
+        <a href="mailto:shaktin@gmail.com" class="balance__link">shaktin@gmail.com</a>
+        <a href="tel:799999999" class="balance__link">+799999999</a>
+        <button class="btn__sign-up icon-plus" data-micromodal-trigger="modal-2"></button>
+      </div>
+
+      <div class="table__wrapper">
+        <table class="balance__table">
+          <tr>
+            <td>Тренировки</td>
+            <td>-</td>
+            <td>10</td>
+            <td>до 15.05.2021</td>
+          </tr>
+          <tr>
+            <td>Накидки</td>
+            <td>-</td>
+            <td>6</td>
+            <td>до 15.05.2021</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="balance__title">Взносы</div>
+      <div class="table__wrapper">
+        <table class="balance__table">
+          <tr>
+            <td>9.03.2021</td>
+            <td>4</td>
+            <td>Н</td>
+            <td>2000</td>
+            <td>до 10.04.2021</td>
+            <td>Дамир Белялов</td>
+            <td><button class="btn__edit icon-pen" data-micromodal-trigger="modal-1"></button></td>
+          </tr>
+          <tr>
+            <td>9.03.2021</td>
+            <td>4</td>
+            <td>Н</td>
+            <td>2000</td>
+            <td>до 10.04.2021</td>
+            <td>Дамир Белялов</td>
+            <td><button class="btn__edit icon-pen" data-micromodal-trigger="modal-1"></button></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="balance__title">Посещаемость</div>
+      <div class="table__wrapper">
+        <table class="balance__table">
+          <tr>
+            <td>9.03.2021</td>
+            <td>Тренировка</td>
+            <td>
+              5.03 - 10.00
+            </td>
+          </tr>
+          <tr>
+            <td>9.03.2021</td>
+            <td class="removed__type">Тренировка</td>
+            <td>
+              5.03 - 10.00
+              <br>
+              Сергей Федосенко
+            </td>
+            <td class="removed__time">3.03.2021 - 18.00</td>
+          </tr>
+          <tr>
+            <td>9.03.2021</td>
+            <td class="removed__type">Тренировка</td>
+            <td>
+              5.03 - 10.00
+              <br>
+              Отмена
+            </td>
+            <td class="removed__time">3.03.2021 - 18.00</td>
+          </tr>
+        </table>
+      </div>
+
+      <form class="assign-role">
+        <label class="assign-role__input">
+          <input type="checkbox" class="assign-role__checkbox">
+          Тренер
+        </label>
+
+        <label class="assign-role__input">
+          <input type="checkbox" class="assign-role__checkbox">
+          Бухгалтер
+        </label>
+
+        <label class="assign-role__input">
+          <input type="checkbox" class="assign-role__checkbox">
+          Редактор
+        </label>
+
+        <label class="assign-role__input">
+          <input type="checkbox" class="assign-role__checkbox">
+          Админ
+        </label>
+
+        <div class="assign-role__line"></div>
+
+        <label class="assign-role__input">
+          <input type="checkbox" class="assign-role__checkbox">
+          ∞ Баланс
+        </label>
+        <div class="control">
+          <button type="submit" class="control__btn btn__submit">Сохранить</button>
+          <button type="reset" class="control__btn btn__reset">Отмена</button>
+        </div>
+      </form>
+    </section>
+
+
+    <section class="total page" id="total">
+      <div class="section-heading">
+        <span class="section-heading__back icon-arrow"></span>
+        <span class="section-heading__title">Общий баланс</span>
+      </div>
+
+      <div class="balance__title">Период</div>
+      <div class="table__wrapper">
+        <table class="balance__table">
+          <tr>
+            <td><input type="date" class="table__period"></td>
+            <td>до</td>
+            <td><input type="date" class="table__period"></td>
+            <td><button class="btn__search icon-search"></button></td>
+          </tr>
+        </table>
+      </div>
+
+      <table class="total__spent">
+        <tr>
+          <td>Итого:</td>
+          <td>2000</td>
+        </tr>
+      </table>
+
+      <div class="table__wrapper">
+        <table class="balance__table">
+          <tr>
+            <td>9.03.2021</td>
+            <td>
+              Маргарита Земцова
+              <table>
+                <tr>
+                  <td>4</td>
+                  <td>Н</td>
+                  <td>2000</td>
+                  <td>до 10.04.2021</td>
+                </tr>
+              </table>
+            </td>
+            <td>Дамир Белялов</td>
+            <td><button class="btn__edit icon-pen" data-micromodal-trigger="modal-1"></button></td>
+          </tr>
+
+          <tr>
+            <td>9.03.2021</td>
+            <td>
+              Маргарита Земцова
+              <table>
+                <tr>
+                  <td>4</td>
+                  <td>Н</td>
+                  <td>2000</td>
+                  <td>до 10.04.2021</td>
+                </tr>
+              </table>
+            </td>
+            <td>Дамир Белялов</td>
+            <td><button class="btn__edit icon-pen" data-micromodal-trigger="modal-1"></button></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+
+    <section class="list page" id="list">
+      <div class="section-heading">
+        <span class="section-heading__back icon-arrow"></span>
+        <span class="section-heading__title">Список участников</span>
+      </div>
+
+      <div class="generate-link">
+        <input type="text" class="link-invite" value="https://asd">
+        <button class="link-copy icon-copy"></button>
+        <button class="link-add btn__sign-up icon-plus"></button>
+        <button class="link-remove btn__log-out icon-plus"></button>
+      </div>
+
+      <ul class="list__users signed-up">
+        <li class="signed-up__student">
+          <span class="signed-up__name page-btn" data-page="#balance">Маргарита Земцова</span>
+          <div class="signed-up__roles">
+            <span class="signed-up__role">Р</span>
+            <span class="signed-up__role">Т</span>
+          </div>
+        </li>
+
+        <li class="signed-up__student">
+          <span class="signed-up__name page-btn" data-page="#balance">Маргарита Земцова</span>
+        </li>
+      </ul>
+    </section>
+
+
+    <section class="redact page" id="redact">
+      <div class="section-heading">
+        <span class="section-heading__back icon-arrow"></span>
+        <span class="section-heading__title">Редактировать расписание</span>
+      </div>
+
+      <div class="schedule__box active">
+        <div class="schedule__title">
+          <span class="schedule__day">Понедельник</span>
+          <span class="schedule__date">5.03.21</span>
+        </div>
+
+        <div class="schedule__lesson">
+          <span class="redact__item">15.00</span>
+          <span class="redact__item">Тренировка</span>
+          <span class="redact__item redact__limit">Лимит 12</span>
+          <button class="btn__edit icon-pen" data-micromodal-trigger="modal-1"></button>
+
+          <div class="redact__coaching-staff">
+            <span class="redact__instructor">
+              <span class="page-btn" data-page="#balance">Марина Харькова</span>
+            </span>
+
+            <span class="redact__instructor">
+              <span class="page-btn" data-page="#balance">Дамир Белялов</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="schedule__lesson">
+          <span class="redact__item">19.00</span>
+          <span class="redact__item">Тренировка</span>
+          <span class="redact__item redact__limit">Лимит 12</span>
+          <button class="btn__edit icon-pen" data-micromodal-trigger="modal-1"></button>
+
+          <div class="redact__coaching-staff">
+            <span class="redact__instructor">
+              <span class="page-btn" data-page="#balance">Марина Харькова</span>
+            </span>
+
+            <span class="redact__instructor">
+              <span class="page-btn" data-page="#balance">Дамир Белялов</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="add__event schedule__lesson">
+          <button class="btn__sign-up icon-plus" data-micromodal-trigger="modal-1">
+            <span class="add__event_text">добавить мероприятие</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="schedule__box active">
+        <div class="schedule__title">
+          <span class="schedule__day">Вторник</span>
+          <span class="schedule__date">6.03.21</span>
+        </div>
+
+        <div class="add__event schedule__lesson">
+          <button class="btn__sign-up icon-plus" data-micromodal-trigger="modal-1">
+            <span class="add__event_text">добавить мероприятие</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="settings page" id="settings">
+      <div class="section-heading">
+        <span class="section-heading__back icon-arrow"></span>
+        <span class="section-heading__title">Настройки</span>
+      </div>
+
+      <form action="">
+        <span class="settings__title">Время обновления расписания</span>
+        <span class="settings__subtitle">День</span>
+        <select name="" class="settings__day">
+          <option value="">Воскресенье</option>
+          <option value="">Понедельник</option>
+          <option value="">Вторник</option>
+          <option value="">Среда</option>
+          <option value="">Четверг</option>
+          <option value="">Пятница</option>
+          <option value="">Суббота</option>
+        </select>
+
+        <div class="settings__box">
+          <div class="settings__time">
+            <span class="settings__subtitle">Час</span>
+            <input type="number" class="settings__input">
+          </div>
+
+          <div class="settings__time">
+            <span class="settings__subtitle">Мин</span>
+            <input type="number" class="settings__input">
+          </div>
+        </div>
+
+        <span class="settings__title">Максимальное время отмены без сгорания баланса</span>
+
+        <div class="settings__box">
+          <div class="settings__time">
+            <span class="settings__subtitle">Час</span>
+            <input type="number" class="settings__input">
+          </div>
+
+          <div class="settings__time">
+            <span class="settings__subtitle">Мин</span>
+            <input type="number" class="settings__input">
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+
+          <form action="">
+            <div class="settings__box">
+              <div class="settings__time">
+                <span class="settings__subtitle">Час</span>
+                <input type="number" class="settings__input">
+              </div>
+
+              <div class="settings__time">
+                <span class="settings__subtitle">Мин</span>
+                <input type="number" class="settings__input">
+              </div>
+
+              <div class="settings__time">
+                <span class="settings__subtitle">Лимит</span>
+                <input type="number" class="settings__input">
+              </div>
+            </div>
+
+            <span class="settings__subtitle">Название</span>
+            <input type="text" class="settings__name">
+
+            <span class="settings__subtitle">Тип мероприятия</span>
+            <select name="" class="settings__day">
+              <option value="">Тренировка</option>
+              <option value="">Накидка</option>
+              <option value="">Мероприятие</option>
+            </select>
+
+            <span class="settings__subtitle">Тренер</span>
+            <div class="settings__inner">
+              <div class="settings__coach">Дамир Белялов<button type="button" class="btn__log-out icon-plus"></button></div>
+              <div class="settings__coach">Дамир Белялов<button type="button" class="btn__log-out icon-plus"></button></div>
+            </div>
+
+            <div class="settings__coach">
+              <select name="" class="settings__select">
+                <option value="">Дамир Белялов</option>
+                <option value="">Дамир Белялов</option>
+                <option value="">Дамир Белялов</option>
+              </select>
+              <button type="button" class="btn__log-out icon-plus"></button>
+            </div>
+
+            <div class="control">
+              <button type="submit" class="control__btn btn__submit">Сохранить</button>
+              <button type="reset" class="control__btn btn__reset" data-micromodal-close>Отмена</button>
+            </div>
+
+            <button type="button" class="btn__delete"><span class="icon-x"></span>Удалить мероприятие</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="modal micromodal-slide" id="modal-2" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-2-title">
+
+          <form action="">
+            <div class="add-payment">
+              <div class="add-payment__box">
+                <span class="add-payment__type">Тренировка</span>
+                <button type="button" class="add-payment__btn add-payment__minus">-</button>
+                <input type="number" class="add-payment__input" value="1" min="0" step="1">
+                <button type="button" class="add-payment__btn add-payment__plus">+</button>
+                <span class="add-payment__text">до</span>
+                <input type="date" class="add-payment__date" value="09.04.2021">
+              </div>
+              <div class="add-payment__box">
+                <span class="add-payment__type">Накидка</span>
+                <button type="button" class="add-payment__btn add-payment__minus">-</button>
+                <input type="number" class="add-payment__input" value="1" min="0" step="1">
+                <button type="button" class="add-payment__btn add-payment__plus">+</button>
+                <span class="add-payment__text">до</span>
+                <input type="date" class="add-payment__date" value="09.04.2021">
+              </div>
+            </div>
+
+            <div class="control">
+              <button type="submit" class="control__btn btn__submit">Сохранить</button>
+              <button type="reset" class="control__btn btn__reset" data-micromodal-close>Отмена</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="modal micromodal-slide" id="modal-3" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-2-title">
+
+          <div class="message">
+            Удачи на тренировке и не только
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

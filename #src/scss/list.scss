@@ -1,0 +1,61 @@
+.list {
+  &__users {
+    .signed-up__student {
+      padding: 5px;
+      justify-content: flex-start;
+    }
+  }
+}
+.link-invite {
+  display: none;
+  border: none;
+  width: 100%;
+  max-width: 250px;
+  padding: 5px;
+}
+.link-copy {
+  display: none;
+  margin-left: 20px;
+  border: none;
+  background-color: transparent;
+  font-size: $fs-icon;
+  color: $color-sky;
+  cursor: pointer;
+}
+.link-add {
+  margin-left: 270px;
+}
+.link-remove {
+  display: none;
+  margin-left: 20px;
+}
+.signed-up {
+
+  &__roles {
+    margin-left: 40px;
+    vertical-align: middle;
+  }
+
+  &__role + .signed-up__role {
+    margin-left: 10px;
+  }
+}
+.generate-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  &.active {
+    .link-invite {
+      display: block;
+    }
+    .link-copy {
+      display: block;
+    }
+    .link-remove {
+      display: block;
+    }
+    .link-add {
+      display: none;
+    }
+  }
+}

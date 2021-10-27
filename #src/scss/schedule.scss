@@ -1,0 +1,231 @@
+// Schedule page start
+.schedule {
+  &__box + .schedule__box {
+    margin-top: 30px;
+  }
+  &__box {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '>';
+      left: 10px;
+      top: 48%;
+      transform: translateY(-50%);
+      font-size: 20px;
+    }
+    &.active {
+      .schedule__title {
+        padding-left: 5px;
+      }
+      .schedule__lesson {
+        display: block;
+      }
+      &::before {
+        content: '';
+      }
+    }
+  }
+  &__title {
+    padding: 5px 5px 5px 25px;
+    font-weight: 700;
+    font-size: $fs-title;
+    background-color: $color-gray;
+    cursor: pointer;
+  }
+  &__day {
+  }
+  &__date {
+    margin-left: 10px;
+  }
+  &__lesson {
+    display: none;
+  }
+  &__lesson + .schedule__lesson {
+    margin-top: 30px;
+  }
+  &__subtitle {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: $fs-title;
+  }
+  &__time {
+  }
+  &__exercise {
+    margin-left: 10px;
+  }
+  &__coaching-staff {
+    border-bottom: 2px solid $color-gray;
+  }
+  &__instructor {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    font-weight: 400;
+    font-family: $main-font;
+    color: $color-main;
+    font-size: $fs-normal;
+    vertical-align: middle;
+    a::before {
+      font-family: 'custom-icons';
+      color: $color-sky;
+      margin-right: 6px;
+    }
+  }
+}
+.btn__sign-up,
+.btn__add,
+.btn__log-out,
+.btn__search{
+  font-size: $fs-icon;
+  border-color: transparent;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.btn {
+  &__sign-up {
+    color: $color-green;
+    margin-left: auto;
+    background-color: transparent;
+  }
+  &__add {
+    margin: 0 5px 0 20px;
+    color: $color-gray;
+  }
+  &__log-out {
+    color: #d02020;
+    transform: rotate(45deg);
+    vertical-align: middle;
+    margin-left: auto;
+  }
+  &__search {
+    color: $color-white;
+    background-color: $color-blue;
+    padding: 8px;
+    font-size: 12px !important;
+  }
+  &__edit {
+    color: $color-blue;
+    font-size: 18px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  &__over {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    font-size: $fs-normal;
+    font-weight: 500;
+    &_icon{
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      &::after {
+        font-family: 'custom-icons';
+        font-size: $fs-title;
+        color: $color-gray;
+        margin-left: 5px;
+      }
+    }
+  }
+}
+.signed-up {
+  &__student {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: $fs-normal;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: $color-white;
+    position: relative;
+    padding-left: 25px;
+  }
+  &__checkbox {
+    margin-right: 10px;
+    position: absolute;
+    z-index: -1;
+    & + .signed-up__checkbox-icon {
+      position: absolute;
+      display: block;
+      z-index: 2;
+      left: 0;
+      width: 18px;
+      height: 18px;
+      border: 2px solid $color-sky;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+    &:checked {
+      & + .signed-up__checkbox-icon {
+        &::before {
+          display: block;
+          content: "\e904";
+          font-family: 'custom-icons';
+          font-style: normal;
+          font-weight: normal;
+          font-variant: normal;
+          text-transform: none;
+          line-height: 1;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          color: $color-sky;
+          text-align: center;
+          padding-top: 1px;
+        }
+      }
+    }
+  }
+  .active + .signed-up__name {
+    font-style: italic;
+  }
+  &__name {
+    cursor: pointer;
+  }
+  &__log-out {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    position: relative;
+    .btn__log-out {
+      position: absolute;
+      right: 0;
+    }
+  }
+  &__counter {
+    vertical-align: middle;
+    margin-right: 40px;
+  }
+}
+
+.unsubscribed {
+  &__reason {
+    margin-right: 5px;
+  }
+  .signed-up__name {
+    color: $color-gray;
+  }
+} 
+.publication {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+  &__title {
+  }
+
+  &__time {
+    margin-left: 10px;
+  }
+
+  &__day {
+    margin-left: 10px;
+  }
+
+  &__btn {
+  }
+}
+
+// Schedule page end

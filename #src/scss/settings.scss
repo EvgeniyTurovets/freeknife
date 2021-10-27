@@ -1,0 +1,49 @@
+.settings {
+  &__title {
+    display: inline-block;
+    font-size: $fs-title;
+    font-weight: 600;
+  }
+  &__subtitle {
+    display: block;
+    color: $color-gray;
+    margin: 10px 0 5px;
+  }
+  &__day {
+    width: 300px;
+    padding: 5px;
+  }
+  &__box {
+    display: flex;
+    & + .settings__title {
+      margin-top: 50px;
+    }
+  }
+  &__time {
+  }
+
+  &__input {
+    max-width: 90px;
+    width: 100%;
+    margin-right: 20px;
+    padding: 3px 5px;
+  }
+  &__inner {
+    margin-top: 15px;
+  }
+  &__coach {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+    font-size: $fs-title;
+    margin-bottom: 10px;
+  }
+  &__select {
+    font-size: $fs-title;
+    cursor: pointer;
+  }
+  &__name {
+    padding: 3px 5px;
+    width: 300px;
+  }
+}
