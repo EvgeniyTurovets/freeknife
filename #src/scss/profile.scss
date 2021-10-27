@@ -2,7 +2,8 @@
 
   &__title {
     display: block;
-    color: $color-gray;
+    color: $color-main;
+    font-weight: 700;
     & + .profile__title {
       margin-top: 10px;
     }

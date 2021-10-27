@@ -29,7 +29,7 @@
     padding: 5px 5px 5px 25px;
     font-weight: 700;
     font-size: $fs-title;
-    background-color: $color-gray;
+    background-color: #EFEFEF;
     cursor: pointer;
   }
   &__day {
@@ -86,25 +86,26 @@
 }
 .btn {
   &__sign-up {
-    color: $color-green;
+    vertical-align: middle;
     margin-left: auto;
     background-color: transparent;
+    width: 26px;
+    height: 26px;
   }
   &__add {
+    width: 26px;
+    height: 26px;
     margin: 0 5px 0 20px;
-    color: $color-gray;
   }
   &__log-out {
-    color: #d02020;
-    transform: rotate(45deg);
+    width: 26px;
+    height: 26px;
     vertical-align: middle;
     margin-left: auto;
   }
   &__search {
-    color: $color-white;
-    background-color: $color-blue;
-    padding: 8px;
-    font-size: 12px !important;
+    width: 26px;
+    height: 26px;
   }
   &__edit {
     color: $color-blue;
@@ -114,20 +115,24 @@
     cursor: pointer;
   }
   &__over {
+    position: relative;
     display: flex;
     align-items: center;
     margin-left: auto;
     font-size: $fs-normal;
     font-weight: 500;
     &_icon{
+      width: 27px;
+      height: 26px;
+      color: #d0d0d0;
+      overflow: hidden;
       background-color: transparent;
       border: none;
       cursor: pointer;
-      &::after {
+      margin-left: 5px;
+      &::before {
         font-family: 'custom-icons';
-        font-size: $fs-title;
-        color: $color-gray;
-        margin-left: 5px;
+        font-size: 26px;
       }
     }
   }
@@ -148,22 +153,26 @@
     margin-right: 10px;
     position: absolute;
     z-index: -1;
-    & + .signed-up__checkbox-icon {
+    & + .signed-up__checkbox-icon::before {
       position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
       display: block;
       z-index: 2;
       left: 0;
-      width: 18px;
-      height: 18px;
-      border: 2px solid $color-sky;
-      border-radius: 2px;
+      font-size: 18px;
+      font-family: 'custom-icons';
+      content: "\e907";
+      color: #b3c7d5;
       cursor: pointer;
     }
     &:checked {
       & + .signed-up__checkbox-icon {
         &::before {
+          font-size: 18px;
           display: block;
-          content: "\e904";
+          content: "\e905";
+          color: #55b8fd;
           font-family: 'custom-icons';
           font-style: normal;
           font-weight: normal;
@@ -172,16 +181,12 @@
           line-height: 1;
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
-          color: $color-sky;
           text-align: center;
-          padding-top: 1px;
         }
       }
     }
   }
-  .active + .signed-up__name {
-    font-style: italic;
-  }
+  
   &__name {
     cursor: pointer;
   }
@@ -200,7 +205,9 @@
     margin-right: 40px;
   }
 }
-
+.italic {
+  font-style: italic !important;
+}
 .unsubscribed {
   &__reason {
     margin-right: 5px;
@@ -227,5 +234,4 @@
   &__btn {
   }
 }
-
 // Schedule page end

@@ -31,6 +31,7 @@ body {
   font-weight: 500;
   font-size: 13px;
   color: #333;
+  background-color: #DBDBDB;
 }
 
 .container {
@@ -132,7 +133,7 @@ body {
 @font-face {
   font-family: "OpenSans";
   font-display: swap;
-  src: url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.woff2") format("woff2");
+  src: url("../fonts/OpenSans-Bold.ttf?hehygb") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
@@ -140,7 +141,7 @@ body {
 @font-face {
   font-family: "OpenSans";
   font-display: swap;
-  src: url("../fonts/OpenSans-SemiBold.woff") format("woff"), url("../fonts/OpenSans-SemiBold.woff2") format("woff2");
+  src: url("../fonts/OpenSans-SemiBold.ttf?hehygb") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
@@ -148,7 +149,7 @@ body {
 @font-face {
   font-family: "OpenSans";
   font-display: swap;
-  src: url("../fonts/OpenSans-MediumItalic.woff") format("woff"), url("../fonts/OpenSans-MediumItalic.woff2") format("woff2");
+  src: url("../fonts/OpenSans-MediumItalic.ttf?hehygb") format("truetype");
   font-weight: 500;
   font-style: italic;
 }
@@ -156,7 +157,7 @@ body {
 @font-face {
   font-family: "OpenSans";
   font-display: swap;
-  src: url("../fonts/OpenSans-Medium.woff") format("woff"), url("../fonts/OpenSans-Medium.woff2") format("woff2");
+  src: url("../fonts/OpenSans-Medium.ttf?hehygb") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
@@ -164,7 +165,7 @@ body {
 @font-face {
   font-family: "OpenSans";
   font-display: swap;
-  src: url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.woff2") format("woff2");
+  src: url("../fonts/OpenSans-Regular.ttf?hehygb") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
@@ -190,53 +191,123 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-x:before {
+.icon-arrow:before {
+  content: "\e916";
+}
+
+.icon-remove .path1:before {
+  content: "\e90a";
+  color: #c22d22;
+}
+
+.icon-remove .path2:before {
   content: "\e90b";
+  margin-left: -1em;
+  color: white;
+}
+
+.icon-remove .path3:before {
+  content: "\e90c";
+  margin-left: -1em;
+  color: white;
+}
+
+.icon-search .path1:before {
+  content: "\e90d";
+  color: #43a7fd;
+}
+
+.icon-search .path2:before {
+  content: "\e90e";
+  margin-left: -1em;
+  color: white;
+}
+
+.icon-search .path3:before {
+  content: "\e90f";
+  margin-left: -1em;
+  color: white;
+}
+
+.icon-add .path1:before {
+  content: "\e910";
+  color: #00ac2e;
+}
+
+.icon-add .path2:before {
+  content: "\e911";
+  margin-left: -1em;
+  color: white;
+}
+
+.icon-add .path3:before {
+  content: "\e912";
+  margin-left: -1em;
+  color: white;
+}
+
+.icon-add-gray .path1:before {
+  content: "\e913";
+  color: #b6b9c1;
+}
+
+.icon-add-gray .path2:before {
+  content: "\e914";
+  margin-left: -1em;
+  color: white;
+}
+
+.icon-add-gray .path3:before {
+  content: "\e915";
+  margin-left: -1em;
+  color: white;
 }
 
 .icon-copy:before {
-  content: "\e90a";
+  content: "\e900";
 }
 
-.icon-bell-slash:after {
+.icon-bell-slash:before {
+  content: "\e901";
+}
+
+.icon-x:before {
   content: "\e902";
 }
 
 .icon-attention:before {
-  content: "\e900";
-}
-
-.icon-bell:after {
-  content: "\e901";
-  font-size: 18px !important;
-  color: #E64646 !important;
-}
-
-.icon-burger:before {
   content: "\e903";
 }
 
-.icon-list:before {
+.icon-bell:before {
   content: "\e904";
+  color: #E64646 !important;
+  font-size: 32px !important;
+  position: absolute;
+  top: -4px;
+  right: -2px;
+}
+
+.icon-checkbox-active:before {
+  content: "\e905";
+  color: #55b8fd;
+}
+
+.icon-list:before {
+  content: "\e906";
+  color: #55b8fd;
+}
+
+.icon-checkbox:before {
+  content: "\e907";
+  color: #b3c7d5;
 }
 
 .icon-pen:before {
-  content: "\e905";
-}
-
-.icon-phone:before {
-  content: "\e906";
-}
-
-.icon-plus:before {
-  content: "\e907";
-}
-
-.icon-search:before {
   content: "\e908";
 }
 
-.icon-arrow:before {
+.icon-phone:before {
   content: "\e909";
 }
 
@@ -358,6 +429,10 @@ body {
   color: #BABABA;
 }
 
+.menu__item-schedule {
+  color: #BABABA;
+}
+
 .page-btn {
   cursor: pointer;
 }
@@ -397,7 +472,7 @@ body {
   padding: 5px 5px 5px 25px;
   font-weight: 700;
   font-size: 16px;
-  background-color: #BABABA;
+  background-color: #EFEFEF;
   cursor: pointer;
 }
 
@@ -462,30 +537,29 @@ body {
 }
 
 .btn__sign-up {
-  color: #4BB34C;
+  vertical-align: middle;
   margin-left: auto;
   background-color: transparent;
+  width: 26px;
+  height: 26px;
 }
 
 .btn__add {
+  width: 26px;
+  height: 26px;
   margin: 0 5px 0 20px;
-  color: #BABABA;
 }
 
 .btn__log-out {
-  color: #d02020;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  width: 26px;
+  height: 26px;
   vertical-align: middle;
   margin-left: auto;
 }
 
 .btn__search {
-  color: #fff;
-  background-color: #0098FF;
-  padding: 8px;
-  font-size: 12px !important;
+  width: 26px;
+  height: 26px;
 }
 
 .btn__edit {
@@ -497,6 +571,7 @@ body {
 }
 
 .btn__over {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -509,16 +584,19 @@ body {
 }
 
 .btn__over_icon {
+  width: 27px;
+  height: 26px;
+  color: #d0d0d0;
+  overflow: hidden;
   background-color: transparent;
   border: none;
   cursor: pointer;
+  margin-left: 5px;
 }
 
-.btn__over_icon::after {
+.btn__over_icon::before {
   font-family: 'custom-icons';
-  font-size: 16px;
-  color: #BABABA;
-  margin-left: 5px;
+  font-size: 26px;
 }
 
 .signed-up__student {
@@ -545,21 +623,27 @@ body {
   z-index: -1;
 }
 
-.signed-up__checkbox + .signed-up__checkbox-icon {
+.signed-up__checkbox + .signed-up__checkbox-icon::before {
   position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   display: block;
   z-index: 2;
   left: 0;
-  width: 18px;
-  height: 18px;
-  border: 2px solid #63bce0;
-  border-radius: 2px;
+  font-size: 18px;
+  font-family: 'custom-icons';
+  content: "\e907";
+  color: #b3c7d5;
   cursor: pointer;
 }
 
 .signed-up__checkbox:checked + .signed-up__checkbox-icon::before {
+  font-size: 18px;
   display: block;
-  content: "\e904";
+  content: "\e905";
+  color: #55b8fd;
   font-family: 'custom-icons';
   font-style: normal;
   font-weight: normal;
@@ -568,13 +652,7 @@ body {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #63bce0;
   text-align: center;
-  padding-top: 1px;
-}
-
-.signed-up .active + .signed-up__name {
-  font-style: italic;
 }
 
 .signed-up__name {
@@ -601,6 +679,10 @@ body {
 .signed-up__counter {
   vertical-align: middle;
   margin-right: 40px;
+}
+
+.italic {
+  font-style: italic !important;
 }
 
 .unsubscribed__reason {
@@ -631,7 +713,8 @@ body {
 
 .profile__title {
   display: block;
-  color: #BABABA;
+  color: #333;
+  font-weight: 700;
 }
 
 .profile__title + .profile__title {
@@ -673,8 +756,8 @@ body {
 .balance__title {
   font-size: 16px;
   padding: 5px;
-  color: #BABABA;
-  font-weight: 500;
+  color: #333;
+  font-weight: 700;
   margin-top: 20px;
 }
 
@@ -903,6 +986,14 @@ body {
   vertical-align: middle;
 }
 
+.settings__width {
+  width: 50%;
+}
+
+.settings__width .settings__input {
+  max-width: 140px;
+}
+
 .settings__title {
   display: inline-block;
   font-size: 16px;
@@ -911,8 +1002,9 @@ body {
 
 .settings__subtitle {
   display: block;
-  color: #BABABA;
-  margin: 10px 0 5px;
+  color: #333;
+  font-weight: 700;
+  margin: 10px 0px 5px;
 }
 
 .settings__day {

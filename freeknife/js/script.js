@@ -1,5 +1,11 @@
 "use strict";
 
+function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 !function (e, t) {
@@ -442,6 +448,51 @@ document.addEventListener("DOMContentLoaded", function () {
         value = value - 1 >= 0 ? --value : value;
         paymentInput.value = value;
       }
+    };
+  });
+  var addStudent = document.querySelectorAll('.btn__add');
+  addStudent.forEach(function (elem) {
+    elem.onclick = function (e) {
+      var studentList = elem.closest('.schedule__lesson').querySelector('.signed-up');
+      var form = document.querySelector('#add-student-form').cloneNode(true);
+      form.id = '';
+      form.classList.remove('hiden');
+      form.addEventListener('reset', function (e) {
+        form.remove();
+      });
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var formData = new FormData(form);
+        var formValues = Array.from(formData.entries());
+        var formObj = {};
+
+        var _iterator = _createForOfIteratorHelper(formData.entries()),
+            _step;
+
+        try {
+          for (_iterator.s(); !(_step = _iterator.n()).done;) {
+            var pair = _step.value;
+            formObj[pair[0]] = pair[1];
+          }
+        } catch (err) {
+          _iterator.e(err);
+        } finally {
+          _iterator.f();
+        }
+
+        if (formObj.name == undefined) {
+          return;
+        }
+
+        var studentLi = document.createElement('li');
+        studentLi.classList.add('signed-up__student');
+        var studentRow = '<div>' + '<label class="signed-up__label">' + '   <input type="checkbox" class="signed-up__checkbox">' + '   <span class="signed-up__checkbox-icon"></span>' + '</label>' + '<span class="signed-up__name page-btn italic" data-page="#balance">' + formObj.name + '</span>' + '</div>' + '<div class="signed-up__log-out">' + '  <span class="signed-up__counter">8</span>' + '  <button class="btn__log-out">' + '    <svg viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">' + '      <path d="M37.5 76C58.2107 76 75 59.2107 75 38.5C75 17.7893 58.2107 1 37.5 1C16.7893 1 0 17.7893 0 38.5C0 59.2107 16.7893 76 37.5 76Z" fill="#C22D22" />' + '      <path d="M24.2856 23.4695L23.1799 24.5981C22.519 25.2728 22.5302 26.3554 23.2048 27.0163L49.3358 52.6146C50.0104 53.2755 51.0931 53.2643 51.7539 52.5897L52.8596 51.461C53.5205 50.7864 53.5093 49.7037 52.8347 49.0428L26.7038 23.4446C26.0291 22.7837 24.9465 22.7948 24.2856 23.4695Z" fill="white" />' + '      <path d="M52.5828 24.2885L51.4542 23.1829C50.7795 22.522 49.6969 22.5331 49.036 23.2078L23.4377 49.3387C22.7769 50.0134 22.788 51.096 23.4626 51.7569L24.5913 52.8626C25.266 53.5234 26.3486 53.5123 27.0095 52.8377L52.6077 26.7067C53.2686 26.0321 53.2575 24.9494 52.5828 24.2885Z" fill="white" />' + '    </svg>' + '  </button>' + '</div>';
+        console.log(studentLi);
+        studentLi.innerHTML = studentRow;
+        studentList.append(studentLi);
+        form.remove();
+      });
+      studentList.after(form);
     };
   });
 });

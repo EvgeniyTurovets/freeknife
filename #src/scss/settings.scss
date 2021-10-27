@@ -1,4 +1,10 @@
 .settings {
+  &__width {
+    width: 50%;
+    .settings__input {
+      max-width: 140px;
+    }
+  }
   &__title {
     display: inline-block;
     font-size: $fs-title;
@@ -6,8 +12,9 @@
   }
   &__subtitle {
     display: block;
-    color: $color-gray;
-    margin: 10px 0 5px;
+    color: $color-main;
+    font-weight: 700;
+    margin: 10px 0px 5px;
   }
   &__day {
     width: 300px;

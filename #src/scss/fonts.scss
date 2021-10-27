@@ -28,41 +28,100 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-x:before {
+.icon-arrow:before {
+  content: "\e916";
+}
+.icon-remove .path1:before {
+  content: "\e90a";
+  color: rgb(194, 45, 34);
+}
+.icon-remove .path2:before {
   content: "\e90b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-remove .path3:before {
+  content: "\e90c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-search .path1:before {
+  content: "\e90d";
+  color: rgb(67, 167, 253);
+}
+.icon-search .path2:before {
+  content: "\e90e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-search .path3:before {
+  content: "\e90f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-add .path1:before {
+  content: "\e910";
+  color: rgb(0, 172, 46);
+}
+.icon-add .path2:before {
+  content: "\e911";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-add .path3:before {
+  content: "\e912";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-add-gray .path1:before {
+  content: "\e913";
+  color: rgb(182, 185, 193);
+}
+.icon-add-gray .path2:before {
+  content: "\e914";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-add-gray .path3:before {
+  content: "\e915";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
 }
 .icon-copy:before {
-  content: "\e90a";
+  content: "\e900";
 }
-.icon-bell-slash:after {
+.icon-bell-slash:before {
+  content: "\e901";
+}
+.icon-x:before {
   content: "\e902";
 }
 .icon-attention:before {
-  content: "\e900";
-}
-.icon-bell:after {
-  content: "\e901";
-  font-size: 18px !important;
-  color: $color-red !important;
-}
-.icon-burger:before {
   content: "\e903";
 }
-.icon-list:before {
+.icon-bell:before {
   content: "\e904";
+  color: $color-red !important;
+  font-size: 32px !important;
+  position: absolute;
+  top: -4px;
+  right: -2px;
+}
+.icon-checkbox-active:before {
+  content: "\e905";
+  color: #55b8fd;
+}
+.icon-list:before {
+  content: "\e906";
+  color: #55b8fd;
+}
+.icon-checkbox:before {
+  content: "\e907";
+  color: #b3c7d5;
 }
 .icon-pen:before {
-  content: "\e905";
-}
-.icon-phone:before {
-  content: "\e906";
-}
-.icon-plus:before {
-  content: "\e907";
-}
-.icon-search:before {
   content: "\e908";
 }
-.icon-arrow:before {
+.icon-phone:before {
   content: "\e909";
 }
