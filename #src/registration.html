@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Регистрация</title>
+</head>
+
+<body>
+  <div class="container wrapper">
+    <form action="" class="auth">
+      <div class="auth__title">Регистрация</div>
+
+      <label class="auth__label">
+        <div class="auth__subtitle">
+          <span class="auth__subtitle-icon">*</span>
+          Имя
+        </div>
+        <input type="text" class="auth__input" value="Дарья">
+      </label>
+
+      <label class="auth__label">
+        <div class="auth__subtitle">
+          <span class="auth__subtitle-icon">*</span>
+          Фамилия
+        </div>
+        <input type="text" class="auth__input" value="Ткачева">
+      </label>
+
+      <label class="auth__label">
+        <div class="auth__subtitle">
+          <span class="auth__subtitle-icon">*</span>
+          Email
+        </div>
+        <input type="email" class="auth__input" value="shaktin@gmail.com">
+      </label>
+
+      <label class="auth__label">
+        <div class="auth__subtitle">
+          <span class="auth__subtitle-icon">*</span>
+          Пароль
+        </div>
+        <input type="password" class="auth__input" value="12345678">
+        <div class="auth__description">Пароль должен быть не менее 6 символов длинной</div>
+      </label>
+
+      <label class="auth__label">
+        <div class="auth__subtitle">
+          <span class="auth__subtitle-icon">*</span>
+          Подтверждение пароля
+        </div>
+        <input type="password" class="auth__input" value="Дарья">
+      </label>
+
+      <label class="auth__label">
+        <div class="auth__subtitle">
+          <span class="auth__subtitle-icon">*</span>
+          Телефон
+        </div>
+        <input type="tel" class="auth__input" value="+79999999">
+      </label>
+
+      <div class="auth__subtitle">
+        <span class="auth__subtitle-icon">*</span>
+        Обязательное поле
+      </div>
+
+      <button type="submit" class="auth__save auth__save-green">Сохранить</button>
+
+      <a href="/freeknife/freeknife/authorization.html" class="auth__link">Авторизация</a>
+    </form>
+  </div>
+
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
