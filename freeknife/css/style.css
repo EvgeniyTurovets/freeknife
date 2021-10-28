@@ -711,6 +711,29 @@ body {
   margin-left: 10px;
 }
 
+.add-student-form {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.add-student-form .student-form__name {
+  padding: 5px;
+}
+
+.add-student-form .add-student-btn {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.add-student-form .btn__log-out {
+  margin: 0 5px 0 auto;
+}
+
 .profile__title {
   display: block;
   color: #333;

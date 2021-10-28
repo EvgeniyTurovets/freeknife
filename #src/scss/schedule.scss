@@ -234,4 +234,27 @@
   &__btn {
   }
 }
+
+.student-form {
+  &__name {
+
+  }
+}
+.add-student-form {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  .student-form__name {
+    padding: 5px;
+  }
+  .add-student-btn {
+    padding: 5px;
+    margin-left: 10px;
+  }
+  .btn__log-out {
+    margin: 0 5px 0 auto;
+  }
+}
+
+
 // Schedule page end

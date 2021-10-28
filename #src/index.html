@@ -221,14 +221,10 @@
       </div>
     </section>
 
-    <form id="add-student-form" class="hiden">
+    <form id="add-student-form" class="hiden add-student-form">
       <input name="name" type="text" class="student-form__name">
-      <button class="btn__sign-up">
-        <svg viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M37.5 76C58.2107 76 75 59.2107 75 38.5C75 17.7893 58.2107 1 37.5 1C16.7893 1 0 17.7893 0 38.5C0 59.2107 16.7893 76 37.5 76Z" fill="#00AC2E" />
-          <path d="M38.8962 17.9929L37.3163 18.0092C36.372 18.0189 35.6143 18.7924 35.624 19.7367L36.0007 56.3148C36.0104 57.2591 36.7839 58.0168 37.7282 58.0071L39.3081 57.9908C40.2525 57.9811 41.0102 57.2076 41.0004 56.2633L40.6238 19.6852C40.614 18.7409 39.8406 17.9832 38.8962 17.9929Z" fill="white" />
-          <path d="M58.3262 38.5813L58.31 37.0014C58.3003 36.057 57.5268 35.2993 56.5825 35.3091L20.0044 35.6857C19.06 35.6955 18.3024 36.4689 18.3121 37.4132L18.3284 38.9932C18.3381 39.9375 19.1115 40.6952 20.0559 40.6855L56.6339 40.3088C57.5783 40.2991 58.336 39.5256 58.3262 38.5813Z" fill="white" />
-        </svg>
+      <button class="add-student-btn">
+        Добавить
       </button>
       <button type="reset" class="btn__log-out">
         <svg viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -818,10 +814,12 @@
               </div>
             </div>
 
-            <div class="settings__time">
-              <span class="settings__subtitle">Тип занятий</span>
-              <input type="text" class="settings__name">
-            </div>
+            <span class="settings__subtitle">Тип занятий</span>
+            <select name="" class="settings__day">
+              <option value="">Тренировка</option>
+              <option value="">Накидка</option>
+              <option value="">Мероприятие</option>
+            </select>
 
             <div class="control">
               <button type="submit" class="control__btn btn__submit">Сохранить</button>
