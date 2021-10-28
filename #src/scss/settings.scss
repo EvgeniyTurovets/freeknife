@@ -44,6 +44,12 @@
     width: 280px;
     font-size: $fs-title;
     margin-bottom: 10px;
+    .coach-select {
+      padding: 5px;
+    }
+    .add-coach {
+      padding: 5px;
+    }
   }
   &__select {
     font-size: $fs-title;

@@ -149,8 +149,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Модальные окна
   MicroModal.init({
-    onShow: modal => console.info(`${modal.id} is shown`), // [1]
-    onClose: modal => console.info(`${modal.id} is hidden`), // [2]
+    onShow: modal => { }, // [1]
+    onClose: modal => {
+      let evenetForm = modal.querySelector('.event-form')
+      if (evenetForm) {
+        delete evenetForm.dataset.eventBlockId
+      }
+    }, // [2]
     // openTrigger: 'data-custom-open', // [3]
     // closeTrigger: 'data-custom-close', // [4]
     openClass: 'is-open', // [5]
@@ -240,5 +245,47 @@ document.addEventListener("DOMContentLoaded", function () {
       })
       studentList.after(form)
     }
+  })
+
+  const addCoach = document.querySelectorAll('.add-coach');
+  const eventModalBtn = document.querySelectorAll('.js-open-event-modal');
+
+  eventModalBtn.forEach(function (elem) {
+    elem.onclick = function (e) {
+      let scheduleBoxId = elem.dataset.scheduleId
+      let evenetForm = document.querySelector('#modal-1').querySelector('.event-form')
+      if (evenetForm) {
+        evenetForm.dataset.eventBlockId = scheduleBoxId
+      }
+    }
+  })
+
+  addCoach.forEach(function (elem) {
+    elem.addEventListener('click', (e) => {
+      e.preventDefault()
+      let selectCoach = elem.closest('.settings__coach').querySelector('.coach-select');
+      let eventBlockForm = elem.closest('.event-form')
+      let coachList = eventBlockForm.querySelector('.settings__inner')
+      if (selectCoach.value && coachList) {
+        console.log(selectCoach.value, coachList)
+        let coachDiv = document.createElement('div')
+        coachDiv.classList.add('settings__coach')
+        let coachRow = `${selectCoach.value}<button type="button" class="btn__log-out"><svg viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M37.5 76C58.2107 76 75 59.2107 75 38.5C75 17.7893 58.2107 1 37.5 1C16.7893 1 0 17.7893 0 38.5C0 59.2107 16.7893 76 37.5 76Z" fill="#C22D22" />
+            <path d="M24.2856 23.4695L23.1799 24.5981C22.519 25.2728 22.5302 26.3554 23.2048 27.0163L49.3358 52.6146C50.0104 53.2755 51.0931 53.2643 51.7539 52.5897L52.8596 51.461C53.5205 50.7864 53.5093 49.7037 52.8347 49.0428L26.7038 23.4446C26.0291 22.7837 24.9465 22.7948 24.2856 23.4695Z" fill="white" />
+            <path d="M52.5828 24.2885L51.4542 23.1829C50.7795 22.522 49.6969 22.5331 49.036 23.2078L23.4377 49.3387C22.7769 50.0134 22.788 51.096 23.4626 51.7569L24.5913 52.8626C25.266 53.5234 26.3486 53.5123 27.0095 52.8377L52.6077 26.7067C53.2686 26.0321 53.2575 24.9494 52.5828 24.2885Z" fill="white" />
+            </svg>
+          </button>`
+        coachDiv.innerHTML = coachRow
+        coachList.append(coachDiv)
+      }
+      // if (eventBlockForm) {
+      //   let eventBlockId = eventBlockForm.dataset.eventBlockId
+      //   if (eventBlockId) {
+      //     let eventBlock = document.querySelector('#' + eventBlockId)
+      //     console.log(eventBlock)
+      //   }
+      // }
+    })
   })
 });
