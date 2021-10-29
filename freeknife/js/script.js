@@ -257,20 +257,17 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
   return window.MicroModal = l, l;
 });
 ;
+var containerHide = document.querySelector('.container__hide');
 
-if (window.location.pathname !== '/') {
-  var container = document.querySelector('.container');
-
-  window.onload = function () {
-    container.classList.add('hiden');
-    document.body.classList.add('loaded_hiding');
-    window.setTimeout(function () {
-      document.body.classList.add('loaded');
-      document.body.classList.remove('loaded_hiding');
-      container.classList.remove('hiden');
-    }, 1000);
-  };
-}
+window.onload = function () {
+  containerHide.classList.add('hiden');
+  document.body.classList.add('loaded_hiding');
+  window.setTimeout(function () {
+    document.body.classList.add('loaded');
+    document.body.classList.remove('loaded_hiding');
+    containerHide.classList.remove('hiden');
+  }, 1000);
+};
 
 document.addEventListener("DOMContentLoaded", function () {
   // Меню бургер
