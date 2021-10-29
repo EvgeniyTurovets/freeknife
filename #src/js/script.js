@@ -1,16 +1,15 @@
-@@include('micromodal.min.js');
 
-let containerHide = document.querySelector('.container__hide');
-
-window.onload = function () {
-  containerHide.classList.add('hiden');
-  document.body.classList.add('loaded_hiding');
+window.addEventListener('load', function () {
+  // window.onload = function () {
+  // let containerHide = document.querySelector('.container__hide');
+  // containerHide.classList.add('hiden');
   window.setTimeout(function () {
     document.body.classList.add('loaded');
-    document.body.classList.remove('loaded_hiding');
-    containerHide.classList.remove('hiden');
+    // containerHide.classList.remove('hiden');
   }, 1000);
-}
+})
+
+@@include('micromodal.min.js');
 
 document.addEventListener("DOMContentLoaded", function () {
   // Меню бургер

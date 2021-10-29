@@ -8,6 +8,14 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
+window.addEventListener('load', function () {
+  // window.onload = function () {
+  // let containerHide = document.querySelector('.container__hide');
+  // containerHide.classList.add('hiden');
+  window.setTimeout(function () {
+    document.body.classList.add('loaded'); // containerHide.classList.remove('hiden');
+  }, 1000);
+});
 !function (e, t) {
   "object" == (typeof exports === "undefined" ? "undefined" : _typeof(exports)) && "undefined" != typeof module ? module.exports = t() : "function" == typeof define && define.amd ? define(t) : (e = e || self).MicroModal = t();
 }(void 0, function () {
@@ -257,18 +265,6 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
   return window.MicroModal = l, l;
 });
 ;
-var containerHide = document.querySelector('.container__hide');
-
-window.onload = function () {
-  containerHide.classList.add('hiden');
-  document.body.classList.add('loaded_hiding');
-  window.setTimeout(function () {
-    document.body.classList.add('loaded');
-    document.body.classList.remove('loaded_hiding');
-    containerHide.classList.remove('hiden');
-  }, 1000);
-};
-
 document.addEventListener("DOMContentLoaded", function () {
   // Меню бургер
   var burgerBtn = document.querySelector('.burger');
