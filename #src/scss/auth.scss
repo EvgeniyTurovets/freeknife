@@ -6,6 +6,8 @@
   &__container {
     max-width: 400px;
     margin: 0 auto;
+    position: relative;
+    z-index: 1001;
   }
   &__title {
     margin-top: 20px;

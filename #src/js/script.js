@@ -1,11 +1,17 @@
 @@include('micromodal.min.js');
 
-window.onload = function () {
-  document.body.classList.add('loaded_hiding');
-  window.setTimeout(function () {
-    document.body.classList.add('loaded');
-    document.body.classList.remove('loaded_hiding');
-  }, 1000);
+if (window.location.pathname !== '/') {
+  let container = document.querySelector('.container');
+
+  window.onload = function () {
+    container.classList.add('hiden');
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+      container.classList.remove('hiden');
+    }, 1000);
+  }
 }
 
 document.addEventListener("DOMContentLoaded", function () {

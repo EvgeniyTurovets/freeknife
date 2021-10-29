@@ -135,13 +135,6 @@ body {
   display: none !important;
 }
 
-.preloader {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  z-index: 1001;
-}
-
 .preloader__image {
   position: absolute;
   top: 0;
@@ -150,7 +143,6 @@ body {
   height: 100%;
   margin-left: -1px;
 }
-
 
 .loaded .preloader {
   display: none;
