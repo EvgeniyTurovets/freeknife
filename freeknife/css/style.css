@@ -151,13 +151,6 @@ body {
   margin-left: -1px;
 }
 
-.loaded_hiding .preloader {
-  -webkit-transition: 0.3s opacity;
-  -o-transition: 0.3s opacity;
-  transition: 0.3s opacity;
-  opacity: 0;
-}
-
 .loaded .preloader {
   display: none;
 }
