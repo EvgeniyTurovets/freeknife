@@ -1,4 +1,13 @@
 @@include('micromodal.min.js');
+
+window.onload = function () {
+  document.body.classList.add('loaded_hiding');
+  window.setTimeout(function () {
+    document.body.classList.add('loaded');
+    document.body.classList.remove('loaded_hiding');
+  }, 100);
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   // Меню бургер
   const burgerBtn = document.querySelector('.burger');

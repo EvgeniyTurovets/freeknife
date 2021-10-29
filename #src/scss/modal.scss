@@ -2,6 +2,25 @@
   font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
 }
 
+#modal-1 {
+  .settings__box {
+    display: flex;
+    justify-content: space-between;
+    .settings__input {
+      margin-right: 0px;
+      & + .settings__input {
+        margin-left: 5px;
+      }
+    }
+  }
+  .settings__input {
+    width: auto;
+  }
+  .settings__coach {
+    width: auto;
+  }
+}
+
 .modal__overlay {
   position: fixed;
   z-index: 99999;

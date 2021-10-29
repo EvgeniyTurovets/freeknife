@@ -131,6 +131,37 @@ body {
   margin-right: 5px;
 }
 
+.hiden {
+  display: none !important;
+}
+
+.preloader {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1001;
+}
+
+.preloader__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-left: -1px;
+}
+
+.loaded_hiding .preloader {
+  -webkit-transition: 0.3s opacity;
+  -o-transition: 0.3s opacity;
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+
 @font-face {
   font-family: "OpenSans";
   font-display: swap;
@@ -735,6 +766,10 @@ body {
   margin: 0 5px 0 auto;
 }
 
+.profile {
+  max-width: 400px;
+}
+
 .profile__title {
   display: block;
   color: #333;
@@ -1091,6 +1126,31 @@ body {
   font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
 }
 
+#modal-1 .settings__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#modal-1 .settings__box .settings__input {
+  margin-right: 0px;
+}
+
+#modal-1 .settings__box .settings__input + .settings__input {
+  margin-left: 5px;
+}
+
+#modal-1 .settings__input {
+  width: auto;
+}
+
+#modal-1 .settings__coach {
+  width: auto;
+}
+
 .modal__overlay {
   position: fixed;
   z-index: 99999;
@@ -1340,6 +1400,11 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+.auth__container {
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .auth__title {

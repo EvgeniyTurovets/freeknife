@@ -10,22 +10,29 @@
 </head>
 
 <body>
-  <div class="container wrapper">
-    <form action="" class="auth">
-      <div class="auth__title">Запрос пароля</div>
+  <div class="wrapper auth__container">
 
-      <label class="auth__label">
-        <div class="auth__subtitle">
-          Напишите свой Email
-        </div>
-        <input type="email" class="auth__input" value="shaktin@gmail.com">
-        <div class="auth__description">Информация для смены пароля будет Вам отправлена на электронную почту</div>
-      </label>
+    <div class="preloader">
+      <img class="preloader__image" src="img/preloader.jpg" alt="">
+    </div>
 
-      <button type="submit" class="auth__save">Выслать</button>
+    <div class="container">
+      <form action="" class="auth">
+        <div class="auth__title">Запрос пароля</div>
 
-      <a href="/freeknife/freeknife/authorization.html" class="auth__link">Авторизация</a>
-    </form>
+        <label class="auth__label">
+          <div class="auth__subtitle">
+            Напишите свой Email
+          </div>
+          <input type="email" class="auth__input" value="shaktin@gmail.com">
+          <div class="auth__description">Информация для смены пароля будет Вам отправлена на электронную почту</div>
+        </label>
+
+        <button type="submit" class="auth__save">Выслать</button>
+
+        <a href="/freeknife/freeknife/authorization.html" class="auth__link">Авторизация</a>
+      </form>
+    </div>
   </div>
 
   <script src="js/script.min.js"></script>

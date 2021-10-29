@@ -10,68 +10,76 @@
 </head>
 
 <body>
-  <div class="container wrapper">
-    <form action="" class="auth">
-      <div class="auth__title">Регистрация</div>
 
-      <label class="auth__label">
+  <div class="wrapper auth__container">
+
+    <div class="preloader">
+      <img class="preloader__image" src="img/preloader.jpg" alt="">
+    </div>
+
+    <div class="container">
+      <form action="" class="auth">
+        <div class="auth__title">Регистрация</div>
+
+        <label class="auth__label">
+          <div class="auth__subtitle">
+            <span class="auth__subtitle-icon">*</span>
+            Имя
+          </div>
+          <input type="text" class="auth__input" value="Дарья">
+        </label>
+
+        <label class="auth__label">
+          <div class="auth__subtitle">
+            <span class="auth__subtitle-icon">*</span>
+            Фамилия
+          </div>
+          <input type="text" class="auth__input" value="Ткачева">
+        </label>
+
+        <label class="auth__label">
+          <div class="auth__subtitle">
+            <span class="auth__subtitle-icon">*</span>
+            Email
+          </div>
+          <input type="email" class="auth__input" value="shaktin@gmail.com">
+        </label>
+
+        <label class="auth__label">
+          <div class="auth__subtitle">
+            <span class="auth__subtitle-icon">*</span>
+            Пароль
+          </div>
+          <input type="password" class="auth__input" value="12345678">
+          <div class="auth__description">Пароль должен быть не менее 6 символов длинной</div>
+        </label>
+
+        <label class="auth__label">
+          <div class="auth__subtitle">
+            <span class="auth__subtitle-icon">*</span>
+            Подтверждение пароля
+          </div>
+          <input type="password" class="auth__input" value="Дарья">
+        </label>
+
+        <label class="auth__label">
+          <div class="auth__subtitle">
+            <span class="auth__subtitle-icon">*</span>
+            Телефон
+          </div>
+          <input type="tel" class="auth__input" value="+79999999">
+        </label>
+
         <div class="auth__subtitle">
           <span class="auth__subtitle-icon">*</span>
-          Имя
+          Обязательное поле
         </div>
-        <input type="text" class="auth__input" value="Дарья">
-      </label>
 
-      <label class="auth__label">
-        <div class="auth__subtitle">
-          <span class="auth__subtitle-icon">*</span>
-          Фамилия
-        </div>
-        <input type="text" class="auth__input" value="Ткачева">
-      </label>
+        <button type="submit" class="auth__save auth__save-green">Сохранить</button>
 
-      <label class="auth__label">
-        <div class="auth__subtitle">
-          <span class="auth__subtitle-icon">*</span>
-          Email
-        </div>
-        <input type="email" class="auth__input" value="shaktin@gmail.com">
-      </label>
-
-      <label class="auth__label">
-        <div class="auth__subtitle">
-          <span class="auth__subtitle-icon">*</span>
-          Пароль
-        </div>
-        <input type="password" class="auth__input" value="12345678">
-        <div class="auth__description">Пароль должен быть не менее 6 символов длинной</div>
-      </label>
-
-      <label class="auth__label">
-        <div class="auth__subtitle">
-          <span class="auth__subtitle-icon">*</span>
-          Подтверждение пароля
-        </div>
-        <input type="password" class="auth__input" value="Дарья">
-      </label>
-
-      <label class="auth__label">
-        <div class="auth__subtitle">
-          <span class="auth__subtitle-icon">*</span>
-          Телефон
-        </div>
-        <input type="tel" class="auth__input" value="+79999999">
-      </label>
-
-      <div class="auth__subtitle">
-        <span class="auth__subtitle-icon">*</span>
-        Обязательное поле
-      </div>
-
-      <button type="submit" class="auth__save auth__save-green">Сохранить</button>
-
-      <a href="/freeknife/freeknife/authorization.html" class="auth__link">Авторизация</a>
-    </form>
+        <a href="/freeknife/freeknife/authorization.html" class="auth__link">Авторизация</a>
+      </form>
+    </div>
   </div>
 
   <script src="js/script.min.js"></script>

@@ -257,6 +257,15 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
   return window.MicroModal = l, l;
 });
 ;
+
+window.onload = function () {
+  document.body.classList.add('loaded_hiding');
+  window.setTimeout(function () {
+    document.body.classList.add('loaded');
+    document.body.classList.remove('loaded_hiding');
+  }, 100);
+};
+
 document.addEventListener("DOMContentLoaded", function () {
   // Меню бургер
   var burgerBtn = document.querySelector('.burger');
