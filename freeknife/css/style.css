@@ -1116,13 +1116,7 @@ body {
 }
 
 .settings__coach .add-coach {
-  padding: 8px 20px;
-  font-weight: 500;
-  font-size: 16px;
-  color: #fff;
-  background-color: #0098FF;
-  border: none;
-  border-radius: 4px;
+  padding: 5px;
   cursor: pointer;
 }
 
