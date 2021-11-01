@@ -20,7 +20,8 @@
   }
   &__subtitle {
     margin: 20px 0 5px;
-    font-size: $fs-normal;
+    font-size: 13px;
+    font-weight: 700;
     color: $color-gray;
   }
   &__subtitle-icon {
@@ -31,7 +32,7 @@
   &__input {
     padding: 5px;
     width: 100%;
-    font-size: $fs-title;
+    font-size: $fs-normal;
     font-weight: 500;
   }
   &__description {
@@ -44,7 +45,7 @@
     margin: 20px 0 0 auto;
     padding: 8px 20px;
     font-weight: 500;
-    font-size: $fs-title;
+    font-size: 12px;
     color: #fff;
     background-color: #0098FF;
     border: none;
@@ -67,7 +68,7 @@
     align-items: center;
     margin-top: 20px;
     padding: 5px 2px;
-    font-size: $fs-title;
+    font-size: $fs-normal;
     input {
       width: 18px;
       height: 18px;

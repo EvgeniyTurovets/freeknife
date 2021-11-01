@@ -4,6 +4,7 @@
     display: block;
     color: $color-main;
     font-weight: 700;
+    font-size: 13px;
     & + .profile__title {
       margin-top: 10px;
     }
@@ -11,10 +12,10 @@
 
   &__input {
     display: block;
+    font-size: $fs-normal;
     width: 100%;
     margin-top: 5px;
     padding: 5px;
-    font-size: 16px;
     border: 1px solid $color-main;
   }
 }

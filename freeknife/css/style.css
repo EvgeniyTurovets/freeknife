@@ -780,6 +780,7 @@ body {
   display: block;
   color: #333;
   font-weight: 700;
+  font-size: 13px;
 }
 
 .profile__title + .profile__title {
@@ -788,10 +789,10 @@ body {
 
 .profile__input {
   display: block;
+  font-size: 14px;
   width: 100%;
   margin-top: 5px;
   padding: 5px;
-  font-size: 16px;
   border: 1px solid #333;
 }
 
@@ -1431,7 +1432,8 @@ body {
 
 .auth__subtitle {
   margin: 20px 0 5px;
-  font-size: 14px;
+  font-size: 13px;
+  font-weight: 700;
   color: #BABABA;
 }
 
@@ -1444,7 +1446,7 @@ body {
 .auth__input {
   padding: 5px;
   width: 100%;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
 }
 
@@ -1459,7 +1461,7 @@ body {
   margin: 20px 0 0 auto;
   padding: 8px 20px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 12px;
   color: #fff;
   background-color: #0098FF;
   border: none;
@@ -1489,7 +1491,7 @@ body {
           align-items: center;
   margin-top: 20px;
   padding: 5px 2px;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .auth__checkbox input {
