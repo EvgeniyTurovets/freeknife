@@ -115,12 +115,13 @@
   }
 }
 .add-payment__date {
-  -webkit-appearance: none;
+  // -webkit-appearance: none;
 }
 .add-payment__date::-webkit-inner-spin-button,
 .add-payment__date::-webkit-calendar-picker-indicator {
-  display: none;
-  -webkit-appearance: none;
+  padding: 0;
+  margin: 0;
+  // -webkit-appearance: none;
 }
 
 .add-payment__input::-webkit-outer-spin-button,
