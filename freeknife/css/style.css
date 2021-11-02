@@ -79,7 +79,7 @@ body {
 .section-heading__title {
   margin-left: 5px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .control {
@@ -891,7 +891,7 @@ select option {
   display: inline-block;
   font-weight: 600;
   margin-top: 16px;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .assign-role__checkbox {
