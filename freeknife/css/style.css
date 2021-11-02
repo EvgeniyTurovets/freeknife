@@ -1045,15 +1045,11 @@ select option {
 .redact__item {
   display: inline-block;
   padding: 10px 5px;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .redact__limit {
   margin: 0 10px;
-}
-
-.redact__coaching-staff {
-  font-size: 16px;
 }
 
 .redact__instructor {
@@ -1062,13 +1058,16 @@ select option {
 }
 
 .add__event {
+  display: inline-block !important;
   margin: 20px 0 0 10px;
+  cursor: pointer;
 }
 
 .add__event_text {
+  padding-left: 5px;
   font-family: "OpenSans", sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 12px;
   color: #333;
   vertical-align: middle;
 }
