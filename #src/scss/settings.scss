@@ -38,10 +38,12 @@
     margin-top: 15px;
   }
   &__coach {
+    font-family: $main-font;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 280px;
-    font-size: $fs-title;
+    font-size: $fs-normal;
     margin-bottom: 10px;
     .coach-select {
       padding: 5px;
@@ -53,7 +55,8 @@
     }
   }
   &__select {
-    font-size: $fs-title;
+    color: $color-main;
+    font-size: $fs-normal;
     cursor: pointer;
   }
   &__name {

@@ -94,6 +94,7 @@ body {
   &__btn {
     width: 50%;
     color: $color-white;
+    font-size: 12px;
     padding: 10px;
     border-radius: 4px;
     cursor: pointer;
@@ -117,7 +118,7 @@ body {
 .btn__delete {
   display: inline-block;
   margin: 30px 0 5px;
-  font-size: $fs-title;
+  font-size: 12px;
   background-color: transparent;
   border: none;
   color: $color-blue;
@@ -154,4 +155,14 @@ body {
 
 .loaded .preloader {
   display: none;
+}
+
+input,
+select {
+  font-family: $main-font;
+  font-size: $fs-normal !important;
+  cursor: pointer;
+  option {
+    padding: 5px;
+  }
 }
