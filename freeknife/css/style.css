@@ -1088,6 +1088,7 @@ select option {
 }
 
 .settings__subtitle {
+  font-family: "OpenSans", sans-serif;
   display: block;
   color: #333;
   font-weight: 700;
