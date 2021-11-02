@@ -1142,8 +1142,12 @@ select option {
 }
 
 .settings__coach .add-coach {
-  padding: 5px;
+  padding: 8px 20px;
   font-size: 12px;
+  color: #fff;
+  background-color: #0098ff;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
 }
 
